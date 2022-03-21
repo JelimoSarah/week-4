@@ -4,3 +4,4 @@ function Pizza(size, crust,topping ){
     this.topping = topping;
 }
 
+var newOrder = new Pizza($("[name = gender]").val();)
