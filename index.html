@@ -26,6 +26,9 @@
             <h2 class="text-center text-white font-weight-bold">SIZE OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have a variety of sizes here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose a size of your liking:</p>
+            <form id="size">
+
+            
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
                     <button type="button" class="btn btn-light btn-lg btn-block" id="small" name="small" value="500">small</button>
@@ -42,6 +45,7 @@
                 </div>
 
             </div>
+        </form>
 
 
 
@@ -53,6 +57,7 @@
             <h2 class="text-center text-white font-weight-bold">CRUST OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have three types of crust options here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose one of the following:</p>
+            <form id="crust">
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
                     <button type="button" class="btn btn-light btn-lg btn-block"name="crispy" value="100">crispy</button>
@@ -69,6 +74,8 @@
                 </div>
 
             </div>
+        </form>
+        
 
 
 
@@ -80,6 +87,8 @@
             <h2 class="text-center text-white font-weight-bold">TOPPINGS OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have a variety of options here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose the toppings of your liking:</p>
+            
+            <form id="topping">
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
                     <button type="button" class="btn btn-light btn-lg btn-block text-center"name="chicken" value="200">chicken</button>
@@ -96,6 +105,7 @@
                 </div>
 
             </div>
+        </form>
         </div>
     </div>
     <div class="card">
@@ -109,7 +119,7 @@
             </div>
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-dark btn-lg btn-block text-center">Make Another Order</button>
+                    <button onclick="priceOfOrder()" type="button" class="btn btn-dark btn-lg btn-block text-center">Make Another Order</button>
                 </div>
             </div>
             <p class="text-white" id="line1">Do you want the order to be delivered?</p>
