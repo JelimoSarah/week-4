@@ -1,3 +1,9 @@
+$("#placeOrder").click(function(){
+var size = $('#size option:selected' ).val();
+var crust =  $('#crust option:selected' ).val();
+var topping =  $('#topping option:selected' ).val();
+console.log (size, crust, topping)
+
 function Pizza(size, crust,topping ){
     this.size = size;
     this.crust = crust;
@@ -8,5 +14,7 @@ var newOrder = new Pizza(document.getElementById("size").value,document.getEleme
 
 function priceOfOrder(){
     var price = newOrder.size + newOrder.crust + newOrder.topping;
-    return price;
+    console.log(price) ;
 }
+
+})

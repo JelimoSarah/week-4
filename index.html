@@ -26,26 +26,12 @@
             <h2 class="text-center text-white font-weight-bold">SIZE OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have a variety of sizes here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose a size of your liking:</p>
-            <form id="size">
-
+            <form class="userSelectImage"> 
+                <select name=" " id="size"> <option value="500">small</option>
+                    <option value="800">medium</option>
+                    <option value="1000">large</option>
+                </select></form>
             
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block" id="small" name="small" value="500">small</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-dark btn-lg btn-block" id="medium"name="medium" value="800">medium</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block" id="large"name="large" value="1000">large</button>
-                </div>
-
-            </div>
-        </form>
 
 
 
@@ -57,24 +43,11 @@
             <h2 class="text-center text-white font-weight-bold">CRUST OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have three types of crust options here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose one of the following:</p>
-            <form id="crust">
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block"name="crispy" value="100">crispy</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-dark btn-lg btn-block"name="stuffed" value="200">stuffed</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block" name="gluten-free" value="250">gluten-free</button>
-                </div>
-
-            </div>
-        </form>
+            <form class="userSelectImage"> 
+                <select name=" " id="crust"> <option value="100">crispy</option>
+                    <option value="200">stuffed</option>
+                    <option value="250">gluten-free</option>
+                </select></form>
         
 
 
@@ -87,25 +60,11 @@
             <h2 class="text-center text-white font-weight-bold">TOPPINGS OPTIONS</h2>
             <p class="text-center text-white" id="line1">We have a variety of options here at Dominos!</p>
             <p class="text-center text-white" id="line1">Go ahead and choose the toppings of your liking:</p>
-            
-            <form id="topping">
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block text-center"name="chicken" value="200">chicken</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-dark btn-lg btn-block text-center"name="beef" value="100">beef</button>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block text-center"name="pineapple" value="50">pineapple</button>
-                </div>
-
-            </div>
-        </form>
+            <form class="userSelectImage"> 
+                <select name=" " id="topping"> <option value="200">chicken </option>
+                    <option value="100">beef</option>
+                    <option value="50">pineapple</option>
+                </select></form>  
         </div>
     </div>
     <div class="card">
@@ -113,7 +72,7 @@
         <div class="card-img-overlay">
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
-                    <button type="button" class="btn btn-light btn-lg btn-block text-center">Place Order (to know
+                    <button type="button" id="placeOrder"class="btn btn-light btn-lg btn-block text-center">Place Order (to know
                         price)</button>
                 </div>
             </div>
@@ -139,7 +98,8 @@
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="main.js"></script>
 
 </body>
 
