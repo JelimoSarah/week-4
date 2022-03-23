@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dominos</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
+    
     <link href="bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="card">
 
+        
 
         <img class="card-img" src="pizzapics/pizzabg.jpg" alt="services">
         <div class="card-img-overlay">
@@ -48,7 +50,7 @@
                     <option value="200">stuffed</option>
                     <option value="250">gluten-free</option>
                 </select></form>
-        
+ 
 
 
 
@@ -72,21 +74,27 @@
         <div class="card-img-overlay">
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
-                    <button type="button" id="placeOrder"class="btn btn-light btn-lg btn-block text-center">Place Order (to know
+                    <button onclick="priceOfOrder()" type="button" id="placeOrder"class="btn btn-light btn-lg btn-block text-center">Place Order (to know
                         price)</button>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="anotherOrder row text-center">
                 <div class="col-sm-4" class="card w-25">
-                    <button onclick="priceOfOrder()" type="button" class="btn btn-dark btn-lg btn-block text-center">Make Another Order</button>
+                    <button  type="button" class="btn btn-dark btn-lg btn-block text-center">Make Another Order</button>
                 </div>
             </div>
+
+            <div id="charge" class="text-white">
+
+
+
+            </div>
             <p class="text-white" id="line1">Do you want the order to be delivered?</p>
-            <select name=" " id="images">
-                <option>Yes</option>
-                <option>No</option>
+            <select name=" " id="delivery">
+                <option value="20">Yes</option>
+                <option value="10">No</option>
             </select>
-            <p class="text-white" id="line1">What is your location?</p>
+            <input type="text" class="text-white" id="line1">What is your location?</p>
             <div class="row text-center">
                 <div class="col-sm-4" class="card w-25">
                     <button type="button" class="btn btn-light btn-lg btn-block">Checkout</button>
